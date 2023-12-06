@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeetingScheduleActivity"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/drawer_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Set Meeting Schedule"
+                app:titleMarginStart="100dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_calendar_month_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input_feild"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:paddingLeft="10dp"
+        android:textSize="25dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select Time"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_access_time_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SelectTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="To"
+    android:paddingLeft="10dp"
+    android:textSize="25dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/timePicker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select Time"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_access_time_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SelectTime1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meeting Venue"
+        android:textSize="25dp"
+        android:paddingLeft="10dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/spinvenue"/>
+   <Button
+       android:layout_marginTop="10dp"
+       android:paddingVertical="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Done"
+       android:id="@+id/btnmeetingschedule"
+       android:layout_marginRight="120dp"
+       android:layout_marginLeft="120dp"
+       />
+</LinearLayout>

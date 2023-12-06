@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelaxPunishmentActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Relax Punishment"
+    android:textSize="30dp"
+    android:textAlignment="center"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_calendar_month_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtchangefrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_picker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_calendar_month_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtchangeto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:id="@+id/btnchange"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Change"
+    android:layout_marginLeft="100dp"
+    android:layout_marginRight="100dp"/>
+</LinearLayout>

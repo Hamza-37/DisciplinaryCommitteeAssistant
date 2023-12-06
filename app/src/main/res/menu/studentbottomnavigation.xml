@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="View Punishment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/menu_action_ViewPunishment"/>
+    <item android:title="Check Progress"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/menu_action_checkprogress"/>
+    <item android:title="Appeal"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/menu_action_appeal"/>
+    <item
+        android:id="@+id/menu_check_schedule"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="CheckSchedule"/>
+</menu>

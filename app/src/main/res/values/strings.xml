@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_reports">Add Reports</string>
+    <string name="previous_records">Previous Records</string>
+    <string name="previous">Previous</string>
+    <string name="active_cases">Active Cases</string>
+    <string name="pending_cases">Pending Cases</string>
+    <string name="new_cases">New Cases</string>
+    <string name="all_cases">All Cases</string>
+    <string-array name="my_spinner_items">
+        <item>Please select an option</item>
+        <item>Option 1</item>
+        <item>Option 2</item>
+        <item>Option 3</item>
+    </string-array>
+</resources>

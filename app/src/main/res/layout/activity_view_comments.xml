@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCommentsActivity"
+    android:orientation="vertical">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F84538"
+        android:title="Add/View Comments"
+        android:id="@+id/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments To/From Director"
+            android:id="@+id/Comments"
+            android:textSize="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_below="@id/Comments"
+            android:layout_height="160dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:hint="Comments"
+            android:id="@+id/cbox"
+            android:background="#9A9696"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cbox"
+            android:text="Comments To/From Committee Member"
+            android:id="@+id/Comments1"
+            android:textSize="20dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_below="@id/Comments1"
+            android:layout_height="160dp"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:hint="Comments"
+            android:id="@+id/Comments2"
+            android:background="#9A9696"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Comments2"
+            android:text="Okay"/>
+    </RelativeLayout>
+</RelativeLayout>

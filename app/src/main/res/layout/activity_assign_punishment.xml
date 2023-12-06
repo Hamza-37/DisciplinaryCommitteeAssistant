@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignPunishmentActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign Punishment"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Punishment Type"
+            android:textSize="20dp"
+            android:id="@+id/ptype"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ptype"
+            android:orientation="horizontal"
+            android:id="@+id/RadioButtons">
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Fine"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"
+                android:id="@+id/rdFine"
+                android:checked="false"/>
+            <RadioButton
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:text="Community Service"
+                android:layout_marginLeft="20dp"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"
+                android:id="@+id/rdcommunityservice"/>
+            <RadioButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Both"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck"
+                android:id="@+id/rdboth"/>
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RadioButtons">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add Fine"
+                    android:id="@+id/txtfine"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Select Punishment"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinassignpunishment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Punishment"
+        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/AddPunishment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:hint="Add Punishments(if not in list)"
+            android:enabled="true"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Start Date"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_calendar_month_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtstartdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Date"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_picker1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Select date"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/baseline_calendar_month_24"
+        app:endIconTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtenddate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assign"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"/>
+</LinearLayout>

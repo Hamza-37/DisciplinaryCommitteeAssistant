@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/active_cases"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:id="@+id/action_home"/>
+    <item android:title="@string/pending_cases"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:id="@+id/action_cart"/>
+    <item android:title="Assign Punishment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:id="@+id/action_setting"/>
+    <item android:title="Tarck Punishment"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/action_profile"/>
+</menu>

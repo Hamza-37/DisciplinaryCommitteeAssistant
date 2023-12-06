@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Active Cases"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:id="@+id/action_home"/>
+    <item android:title="Pending Cases"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:id="@+id/action_cart"/>
+    <item android:title="All Cases"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:id="@+id/action_setting"/>
+    <item android:title="New Cases"
+        android:icon="@android:drawable/stat_notify_error"
+        android:id="@+id/action_profile"/>
+
+</menu>

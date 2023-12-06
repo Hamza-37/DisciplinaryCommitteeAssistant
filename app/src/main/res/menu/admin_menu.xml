@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Add Report"
+        android:icon="@drawable/baseline_add_24"
+        android:id="@+id/menu_Addreport"/>
+    <item android:title="Previous Reports"
+        android:icon="@drawable/baseline_cases_24"
+        android:id="@+id/menu_previousreports"/>
+    <item android:title="Student Progress"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/menu_Progress"/>
+</menu>
